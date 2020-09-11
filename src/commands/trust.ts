@@ -5,7 +5,8 @@ export default class Trust extends Command {
   static description = 'Create trust line: Trust an account up to the specified amount of currency'
 
   static examples = [
-    `$ iou-issuer trust r9vYkdnueogdPSZ4pT9tyXpxtjX2P31nP3 sawFJgo2bqcUBH2utvhSZV6FfsfSk --issuer=rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQBD --value=100 --currency=USD
+    `$ iou-issuer trust r9vYkdnueogdPSZ4pT9tyXpxtjX2P31nP3 sawFJgo2bqcUBH2utvhSZV6FfsfSk \
+  --issuer=rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQBD --value=100 --currency=USD
 accepted: true
 account_sequence_available: 10490189
 account_sequence_next: 10490189

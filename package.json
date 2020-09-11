@@ -1,7 +1,7 @@
 {
   "name": "iou-issuer",
   "description": "Issue and send IOUs on the XRP Ledger",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Elliot Lee",
   "bin": {
     "iou-issuer": "./bin/run"
@@ -11,6 +11,7 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
+    "ripple-lib": "^1.8.0",
     "tslib": "^1"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 {
   "name": "iou-issuer",
   "description": "Issue and send IOUs on the XRP Ledger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Elliot Lee",
   "bin": {
     "iou-issuer": "./bin/run"

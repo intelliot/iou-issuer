@@ -19,7 +19,7 @@ $ npm install -g iou-issuer
 $ iou-issuer COMMAND
 running command...
 $ iou-issuer (-v|--version|version)
-iou-issuer/0.0.1 darwin-x64 node-v12.18.3
+iou-issuer/0.0.2 darwin-x64 node-v12.18.3
 $ iou-issuer --help [COMMAND]
 USAGE
   $ iou-issuer COMMAND
@@ -77,7 +77,7 @@ EXAMPLE
   validated_ledger_index: 10489689
 ```
 
-_See code: [src/commands/default-ripple.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.1/src/commands/default-ripple.ts)_
+_See code: [src/commands/default-ripple.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.2/src/commands/default-ripple.ts)_
 
 ## `iou-issuer hello [FILE]`
 
@@ -97,7 +97,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.2/src/commands/hello.ts)_
 
 ## `iou-issuer help [COMMAND]`
 
@@ -136,12 +136,36 @@ OPTIONS
   -v, --value=value              (required) Amount value to send
 
 EXAMPLE
-  $ iou-issuer send rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQBD sshcfshUQBZHVtTVrFCdYHcZzYefN 
+  $ iou-issuer send rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQBD sshcfshUQBZHVtTVrFCdYHcZzYefN   
   --destination=r9vYkdnueogdPSZ4pT9tyXpxtjX2P31nP3 --value=100 --currency=USD
-  ...
+  accepted: true
+  account_sequence_available: 10489010
+  account_sequence_next: 10489010
+  applied: true
+  broadcast: true
+  engine_result: tesSUCCESS
+  engine_result_code: 0
+  engine_result_message: The transaction was applied. Only final in a validated ledger.
+  kept: true
+  open_ledger_cost: 10
+  queued: false
+  tx_blob: 
+  12000022800000002400A00CB1201B00A0243D61D5038D7EA4C680000000000000000000000000005553440000000000A02CAD0E2EDDACEA4B7C3A
+  F520A0791E1DFDA04E68400000000000000C69D5038D7EA4C680000000000000000000000000005553440000000000A02CAD0E2EDDACEA4B7C3AF5
+  20A0791E1DFDA04E732103424E00965CD2E2528E69A947BE148F7E0DFE99377F9F2A6F991BA53DDF83D51274473045022100875E3E2DDBE2EA303B
+  823760101AD25380E0BB75ABC9AC6A037B7D3F1E7C2A3E0220224732931413EE220D03BF8B58259CE6362E4D756D5490B8DCFC6D3314861CAE8114
+  A02CAD0E2EDDACEA4B7C3AF520A0791E1DFDA04E831461E18EBCCCA6BC1A10B43DB3AB7C5AE939AFA161
+  tx_json: 
+  {"Account":"rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQBD","Amount":{"currency":"USD","issuer":"rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQB
+  D","value":"100"},"Destination":"r9vYkdnueogdPSZ4pT9tyXpxtjX2P31nP3","Fee":"12","Flags":2147483648,"LastLedgerSequence
+  ":10495037,"SendMax":{"currency":"USD","issuer":"rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQBD","value":"100"},"Sequence":1048900
+  9,"SigningPubKey":"03424E00965CD2E2528E69A947BE148F7E0DFE99377F9F2A6F991BA53DDF83D512","TransactionType":"Payment","Tx
+  nSignature":"3045022100875E3E2DDBE2EA303B823760101AD25380E0BB75ABC9AC6A037B7D3F1E7C2A3E0220224732931413EE220D03BF8B582
+  59CE6362E4D756D5490B8DCFC6D3314861CAE","hash":"470BEAD95B008EE18431B2010898474D8A7A7FA2151A4ACB2D1A9A547F69908C"}
+  validated_ledger_index: 10495034
 ```
 
-_See code: [src/commands/send.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.1/src/commands/send.ts)_
+_See code: [src/commands/send.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.2/src/commands/send.ts)_
 
 ## `iou-issuer trust ACCOUNT SECRET`
 
@@ -163,7 +187,7 @@ OPTIONS
   -v, --value=value        (required) Limit of trust line
 
 EXAMPLE
-  $ iou-issuer trust r9vYkdnueogdPSZ4pT9tyXpxtjX2P31nP3 sawFJgo2bqcUBH2utvhSZV6FfsfSk 
+  $ iou-issuer trust r9vYkdnueogdPSZ4pT9tyXpxtjX2P31nP3 sawFJgo2bqcUBH2utvhSZV6FfsfSk   
   --issuer=rEbvdqTyRZVvYun1zdNU5pqZgWdNZRYQBD --value=100 --currency=USD
   accepted: true
   account_sequence_available: 10490189
@@ -190,5 +214,5 @@ EXAMPLE
   validated_ledger_index: 10494926
 ```
 
-_See code: [src/commands/trust.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.1/src/commands/trust.ts)_
+_See code: [src/commands/trust.ts](https://github.com/intelliot/iou-issuer/blob/v0.0.2/src/commands/trust.ts)_
 <!-- commandsstop -->
